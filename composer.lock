@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3bef9a200bd041f9a5cdb6798b6b86e7",
+    "content-hash": "81d00d4d28c0228d8fb0f8155fa6f68b",
     "packages": [
         {
             "name": "doctrine/collections",
@@ -1310,6 +1310,62 @@
                 "source": "https://github.com/nikic/PHP-Parser/tree/v5.6.1"
             },
             "time": "2025-08-13T20:13:15+00:00"
+        },
+        {
+            "name": "ok/ipstack-client",
+            "version": "2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GitHubHubus/ipstack-client.git",
+                "reference": "07313ced7feebc16204555d6da0ec876dfb858fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GitHubHubus/ipstack-client/zipball/07313ced7feebc16204555d6da0ec876dfb858fd",
+                "reference": "07313ced7feebc16204555d6da0ec876dfb858fd",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-simplexml": "*",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "phpunit/php-code-coverage": "^9",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "OK\\Ipstack\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oleg Kochetkov",
+                    "email": "oleg.kochetkov999@yandex.ru"
+                }
+            ],
+            "description": "A PHP wrapper for using Ipstack API",
+            "homepage": "https://github.com/GitHubHubus/ipstack-client",
+            "keywords": [
+                "IP",
+                "api",
+                "client",
+                "geocode",
+                "ipstack",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/GitHubHubus/ipstack-client/issues",
+                "source": "https://github.com/GitHubHubus/ipstack-client/tree/2.1"
+            },
+            "time": "2021-11-17T14:10:03+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -5479,7 +5535,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
@@ -5487,6 +5543,6 @@
         "ext-ctype": "*",
         "ext-iconv": "*"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
