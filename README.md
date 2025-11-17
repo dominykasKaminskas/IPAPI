@@ -2,6 +2,8 @@
 
 Symfony 6 RESTful API to manage and blacklist IP address information using OpenAPI Specification.
 
+![API](https://github.com/dominykasKaminskas/IPAPI/blob/main/images/screenshot.png)
+
 ## Functionality
 1. Retrieve IP Information and add it to the database
 2. Delete IP Information from the database
