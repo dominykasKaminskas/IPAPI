@@ -38,9 +38,6 @@ class IPAddress
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $zip = null;
 
-    // #[ORM\OneToOne(mappedBy: 'ip_address', cascade: ['persist', 'remove'])]
-    // private ?Blacklist $blacklist = null;
-
     public function getId(): ?int
     {
         return $this->id;
@@ -140,21 +137,4 @@ class IPAddress
 
         return $this;
     }
-
-    // public function getBlacklist(): ?Blacklist
-    // {
-    //     return $this->blacklist;
-    // }
-
-    // public function setBlacklist(Blacklist $blacklist): static
-    // {
-    //     // set the owning side of the relation if necessary
-    //     if ($blacklist->getIpAddress() !== $this) {
-    //         $blacklist->setIpAddress($this);
-    //     }
-
-    //     $this->blacklist = $blacklist;
-
-    //     return $this;
-    // }
 }

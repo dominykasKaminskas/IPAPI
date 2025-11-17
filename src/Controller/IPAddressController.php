@@ -15,64 +15,6 @@ use OpenApi\Attributes as OA;
 
 final class IPAddressController extends AbstractController
 {
-    // #[Route('/api/ip', name: 'api_ip', methods: ['GET'])]
-    // #[OA\Get(
-    //     path: "/api/ip",
-    //     summary: "All IP addresses",
-    //     responses: [
-    //         new OA\Response(
-    //             response: 200,
-    //             description: "API is healthy",
-    //             content: new OA\JsonContent(
-    //                 properties: [
-    //                     new OA\Property(property: "status", type: "string", example: "ok")
-    //                 ]
-    //             )
-    //         )
-    //     ]
-    // )]
-    // public function index(ValidatorInterface $validator, IPAddressRepository $ipAddressRepository): JsonResponse
-    // {
-    //     $ip_addresses = $ipAddressRepository->findAll();
-
-    //     $errors = $validator->validate($ip_addresses);
-
-    //     if (count($errors) > 0) {
-    //         /*
-    //          * Uses a __toString method on the $errors variable which is a
-    //          * ConstraintViolationList object. This gives us a nice string
-    //          * for debugging.
-    //          */
-    //         $errorsString = (string) $errors;
-
-    //         return $this->json(['error' => $errorsString]);
-    //     }
-
-    //     return $this->json($ip_addresses);
-    // }
-
-    // #[Route('/api/create/{ip}', name: 'api_ip_create', methods: ['POST'])]
-    // #[OA\Response(
-    //     path: "/api/create/{ip}",
-    //     summary: "Add new IP",
-    //     responses: [
-    //         new OA\Response(
-    //             response: 200,
-    //             description: "API is healthy",
-    //             content: new OA\JsonContent(
-    //                 properties: [
-    //                     new OA\Property(property: "status", type: "string", example: "ok")
-    //                 ]
-    //             )
-    //         )
-    //     ]
-    // )]
-    // #[OA\Parameter(
-    //     name: 'ip_address',
-    //     in: 'query',
-    //     description: 'The field used to order rewards',
-    //     schema: new OA\Schema(type: 'string')
-    // )]
     private function create(EntityManagerInterface $entityManager, string $ip, string $api_key)
     {
         $ip_address = new IPAddress();
